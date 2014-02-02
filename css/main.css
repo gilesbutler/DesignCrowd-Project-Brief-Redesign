@@ -56,12 +56,31 @@
 }
 
 .Break--horizontal {
-  border-top-color: #cbcbcb;
+  border-top-color: #CBCBCF;
   margin-bottom: 40px;
+}
+
+.Break--horizontal.Break--half {
+  margin-bottom: 20px;
+}
+
+.Break--vertical {
+  background: #cbcbcb;
+  height: 20px;
+  width: 1px;
+  float: right;
 }
 
 .text-center {
   text-align: center!important;
+}
+
+.text-right {
+  text-align: right!important;
+}
+
+.text-left {
+  text-align: left!important;
 }
 
 .text-underline {
@@ -593,7 +612,6 @@
 
 .ProjectUpdates-updateTitle {
     margin: 0 0 15px 74px;
-
     line-height: 1;
     font-size: 20px;
     font-weight: 500;
@@ -601,7 +619,165 @@
 
 .ProjectUpdates-updateInfo {
     margin-left: 76px;
-
     font-weight: 300;
     letter-spacing: 0.1em;
+}
+
+
+/* Modules */
+.module {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.module .title {
+    height: 65px;
+
+    border-bottom: 1px solid #cbcbcb;
+    margin: -10px -20px 20px;
+}
+
+.module .title h2 {
+    text-align: left;
+
+    padding: 16px 0 0 20px;
+    font-size: 18px;
+    font-weight: 100;
+    text-shadow: none;
+    letter-spacing: 0;
+}
+
+.module .span2 {
+    width: 148px;
+}
+
+.module--secondary .title {
+  background: #f3f3f4;
+}
+
+.module--secondary .title h2 {
+  color: #1f8cbe;
+}
+
+/* Payment */
+.Payment-terms {
+    color: #555555;
+    font-family: "museo-sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: block;
+    line-height: 1;
+}
+
+.table--paymentTable {
+  font-family: "museo-sans", Arial, sans-serif;
+  margin: 0;
+}
+
+.table--paymentTable tr:hover {
+  background: transparent;
+}
+
+.table--paymentTable tbody > tr > td {
+  background: transparent!important;
+  border: none;
+  padding: 12px 0;
+}
+
+.PaymentTable-labelWinner {
+    font-size: 18px!important;
+    color: #555;
+    font-weight: 700;
+}
+
+.PaymentTable-winnerAmount, .PaymentTable-secondaryAmount {
+    font-size: 22px!important;
+    color: #333;
+    font-weight: 700;
+}
+
+.PaymentTable-labelSecondary {
+    font-size: 16px!important;
+    color: #555;
+    font-weight: 700;
+}
+
+.PaymentTable-totalLabel {
+    font-size: 20px!important;
+    color: #555;
+    font-weight: 700;
+}
+
+.PaymentTable-totalPrice {
+    font-size: 26px!important;
+    color: #333;
+    font-weight: 700;
+}
+
+.module--payment .Break {
+  margin-bottom: 15px;
+}
+
+/* JobsFeed */
+.JobsFeed-info {
+  color: #777777;
+  font-family: "museo-sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.JobsFeed-items {
+    list-style: none;
+
+    margin: 0;
+}
+
+.JobsFeed-item {
+    border-bottom: 1px solid #CBCBCF;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.JobsFeed-item p {
+  line-height: 1;
+}
+
+.JobsFeed-item a {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+.JobsFeed-title {
+    font-size: 16px;
+
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+/* Related Jobs */
+.RelatedJobs {
+    list-style: none;
+
+    background: #f3f3f4;
+    margin: 0 0 10px;
+
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px #fff;
+}
+
+.RelatedJobs > li {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.RelatedJobs > li:last-child {
+  margin-bottom: 0;
 }
