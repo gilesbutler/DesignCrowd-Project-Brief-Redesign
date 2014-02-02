@@ -24,6 +24,9 @@
   font-weight: 900;
 }
 
+.warning {
+  color: #c88685!important;
+}
 
 /* Helpers */
 .inline-list {
@@ -59,6 +62,10 @@
 
 .text-center {
   text-align: center!important;
+}
+
+.text-underline {
+  text-decoration: underline!important;
 }
 
 /* General Styles */
@@ -183,7 +190,7 @@
 .Brief {
     padding: 0;
     box-shadow: 1px 1px 1px #fff;
-    margin: 0;
+    margin: 0 0 40px;
 }
 
 .nav-tabs {
@@ -305,4 +312,296 @@
 .table--brief tbody > tr > td {
   background: #fff!important;
   border-right: 1px solid #e6e6e6;
+}
+
+.Brief-legend {
+  color: #555555;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+
+/* Sliders */
+.Sliders {
+    list-style: none;
+    margin: 0 0 40px;
+}
+
+.Sliders-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.Slider-label {
+    font-family: "museo-sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 2px;
+}
+
+.Slider-label--end {
+    left: 635px;
+}
+
+.Slider {
+    height: 26px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    width: 520px;
+    position: relative;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.07);
+    margin-left: 100px;
+}
+
+.Slider-handle {
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(225,225,225,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(225,225,225,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(225,225,225,1) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(225,225,225,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(225,225,225,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(225,225,225,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=0 );
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.2);
+    top: 3px;
+}
+
+.Slider-track {
+    height: 8px;
+    position: absolute;
+    width: 500px;
+    background: #e4e4e4;
+    border-radius: 10px;
+    top: 9px;
+    left: 10px;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.Slider-count {
+  height: 8px;
+  position: absolute;
+  width: 0;
+  background: #1f8cbe;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+}
+
+.Slider-countGradient {
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.7) 0%, rgba(31,140,190,1) 78%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(78%,rgba(31,140,190,1)));
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.7) 0%,rgba(31,140,190,1) 78%);
+  background: -o-linear-gradient(top,  rgba(255,255,255,0.7) 0%,rgba(31,140,190,1) 78%);
+  background: -ms-linear-gradient(top,  rgba(255,255,255,0.7) 0%,rgba(31,140,190,1) 78%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.7) 0%,rgba(31,140,190,1) 78%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1f8cbe',GradientType=0 );
+  position: absolute;
+  display: block;
+  height: 8px;
+  width: 100%;
+  opacity: 0.6;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 2px rgba(34,120,159,0.9), 0px 0px 2px rgba(0,0,0,0.3);
+}
+
+.Slider-count-1 .Slider-count {
+  width: 50px;
+}
+
+.Slider-count-2 .Slider-count {
+  width: 100px;
+}
+
+.Slider-count-3 .Slider-count {
+  width: 150px;
+}
+
+.Slider-count-4 .Slider-count {
+  width: 200px;
+}
+
+.Slider-count-5 .Slider-count {
+  width: 250px;
+}
+
+.Slider-count-6 .Slider-count {
+  width: 300px;
+}
+
+.Slider-count-7 .Slider-count {
+  width: 350px;
+}
+
+.Slider-count-8 .Slider-count {
+  width: 400px;
+}
+
+.Slider-count-9 .Slider-count {
+  width: 450px;
+}
+
+.Slider-count-10 .Slider-count {
+  width: 500px;
+}
+
+.Slider-count-1 .Slider-handle {
+  left: 50px;
+}
+
+.Slider-count-2 .Slider-handle {
+  left: 100px;
+}
+
+.Slider-count-3 .Slider-handle {
+  left: 150px;
+}
+
+.Slider-count-4 .Slider-handle {
+  left: 200px;
+}
+
+.Slider-count-5 .Slider-handle {
+  left: 250px;
+}
+
+.Slider-count-6 .Slider-handle {
+  left: 300px;
+}
+
+.Slider-count-7 .Slider-handle {
+  left: 350px;
+}
+
+.Slider-count-8 .Slider-handle {
+  left: 400px;
+}
+
+.Slider-count-9 .Slider-handle {
+  left: 450px;
+}
+
+.Slider-count-10 .Slider-handle {
+  left: 500px;
+}
+
+
+/* Project Requirements */
+.ProjectRequirements {
+  list-style-type: none;
+  margin: 0;
+}
+
+.ProjectRequirements-item {
+  font-family: "museo-sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+
+/* Project Updates */
+.ProjectUpdates {
+  margin: 0 0 -10px -10px;
+  background: #ededed;
+  width: 768px;
+  height: 100%;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.05);
+  border-top: 1px solid #D6D5D5;
+  box-sizing: border-box;
+}
+
+.ProjectUpdates-intro {
+    padding: 23px 16px;
+
+    border-bottom: 1px solid #d0d0d0;
+    box-shadow: 0 1px 0 #fff;
+    margin-bottom: 25px;
+}
+
+.ProjectUpdates-title {
+    margin: 0;
+    font-size: 20px;
+    color: #555555;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.ProjectUpdates-total {
+    float: right;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 300;
+    line-height: 1;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.ProjectUpdates-count {
+    font-size: 22px;
+    font-weight: 900;
+    color: #1f8cbe;
+}
+
+.ProjectUpdates-items {
+    list-style: none;
+    margin: 0 0 20px 16px;
+}
+
+.ProjectUpdates-item {
+    position: relative;
+
+}
+
+.ProjectUpdates-updateNumber {
+    background: #fff;
+    border: 1px solid #dddddd;
+    height: 57px;
+    font-family: "museo-sans", Arial, sans-serif;
+    width: 57px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 18px 0 0 20px;
+    color: #1f8cbe;
+    font-size: 26px;
+    font-weight: 900;
+    position: absolute;
+    top: 4px;
+}
+
+.ProjectUpdates-updateDate {
+    margin-left: 75px;
+    font-family: "museo-sans", Arial, sans-serif;
+    font-size: 12px;
+    color: #777777;
+    font-weight: 100;
+    margin-bottom: 10px;
+    display: block;
+    line-height: 1;
+}
+
+.ProjectUpdates-updateTitle {
+    margin: 0 0 15px 74px;
+
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ProjectUpdates-updateInfo {
+    margin-left: 76px;
+
+    font-weight: 300;
+    letter-spacing: 0.1em;
 }
