@@ -134,6 +134,10 @@
   font-weight: 300;
 }
 
+.BriefIntro-action i {
+  margin-right: 5px;
+}
+
 
 
 /* Breadcumbs */
@@ -188,10 +192,10 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 23px;
-  margin: 0 65px 0 0;
+  margin: 0 45px 0 0;
   text-align: right;
   float: left;
-  padding: 20px 30px;
+  padding: 26px 30px;
   border-right: 1px solid #ddd;
   box-shadow: 1px 0 0 #fff;
   display: inline-block;
@@ -201,8 +205,9 @@
 .ProjectOverview-data {
   font-size: 30px;
   font-weight: 900;
-  padding: 23px 0;
+  padding: 21px 0 0;
   margin: 0;
+  vertical-align: middle;
 }
 
 /* The Brief */
@@ -233,6 +238,7 @@
   letter-spacing: 1px;
   text-shadow: 1px 1px 0 #fff;
   box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.7);
+  padding-top: 8px;
 }
 
 .nav-tabs > li.active {
@@ -242,7 +248,7 @@
 .nav-tabs > li.active > a {
   color: #555555;
   font-size: 18px;
-  padding: 15px 15px 10px;
+  padding: 7px 15px 10px;
 }
 
 .nav-tabs > li:first-child {
@@ -254,13 +260,13 @@
     font-family: "museo-sans", Arial, sans-serif;
     font-size: 16px;
     right: 0;
-    background: #ededed;
     height: 100%;
     top: 0;
-    padding: 22px 20px;
+    padding: inherit;
     box-sizing: border-box;
     border-left: 1px solid #ddd;
     box-shadow: inset 1px 0 1px rgba(255, 255, 255, 0.8);
+    padding: 0;
 }
 
 .ProjectUpdates-notifier > a {
@@ -269,7 +275,22 @@
   font-family: "museo-sans", Arial, sans-serif;
   font-weight: 100;
   text-shadow: 1px 1px 0 #fff;
+  padding: 20px 20px;
+  display: block;
+  background: #ededed;
 }
+
+.ProjectUpdates-notifier > a:hover {
+  background: #E7CFCF;
+  color: rgb(142, 92, 92);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.78);
+}
+
+.ProjectUpdates-notifier > a:hover span {
+  border-bottom-color: #c89a99;
+  border-bottom: none;
+}
+
 
 .ProjectUpdates-notifier > a span {
   border-bottom: 1px dashed #B5B5B5;
@@ -640,11 +661,12 @@
 .module .title h2 {
     text-align: left;
 
-    padding: 16px 0 0 20px;
+    padding: 10px 0 0 20px;
     font-size: 18px;
     font-weight: 100;
     text-shadow: none;
     letter-spacing: 0;
+    vertical-align: text-top;
 }
 
 .module .span2 {
@@ -739,6 +761,7 @@
     border-bottom: 1px solid #CBCBCF;
     margin-bottom: 20px;
     padding-bottom: 10px;
+    position: relative;
 }
 
 .JobsFeed-item p {
@@ -773,11 +796,164 @@
     box-shadow: inset 1px 1px 1px rgba(0,0,0,0.05), 1px 1px 1px #fff;
 }
 
-.RelatedJobs > li {
+.RelatedJobs-item, .HelpQuestions-item  {
   font-size: 15px;
   margin-bottom: 20px;
 }
 
-.RelatedJobs > li:last-child {
+.RelatedJobs-item:last-child {
   margin-bottom: 0;
+}
+
+/* Help Questions */
+.HelpQuestions {
+    list-style: none;
+    margin: 0;
+}
+
+/* Icons */
+.Icon {
+  background: url(../images/sprite.png) scroll no-repeat 0 0;
+  display: inline-block;
+  position: relative;
+}
+
+.Icon-plus {
+    width: 14px;
+    height: 14px;
+}
+
+.Icon-search {
+    width: 14px;
+    height: 14px;
+    background-position: 0 -23px;
+}
+
+.Icon-uk-flag {
+    background-position: -30px 4px;
+    height: 17px;
+    width: 17px;
+}
+
+.Icon-calendar {
+width: 38px;
+
+height: 40px;
+
+background-position: 0 -40px;
+top: 5px;
+right: -10px;
+}
+
+.Icon-designs {
+width: 71px;
+
+height: 40px;
+
+background-position: 0 -89px;
+top: 8px;
+right: -20px;
+}
+
+.Icon-dollar {
+width: 55px;
+
+height: 40px;
+
+background-position: 0 -132px;
+top: 7px;
+right: -20px;
+}
+
+.Icon-details {
+  height: 27px;
+  width: 28px;
+  background-position: 0 -179px;
+  top: 8px;
+}
+
+.Icon-comment {
+  height: 19px;
+  width: 17px;
+  background-position: 0 -216px;
+  top: 5px;
+}
+
+.Icon-notify {
+  height: 20px;
+  width: 20px;
+  background-position: 0 -245px;
+  top: 5px;
+  left: -6px;
+}
+
+.Icon-cross {
+    height: 14px;
+  width: 14px;
+
+    background-position: 0 -275px;
+    margin-right: 4px;
+    top: 1px;
+}
+
+.Icon-update {
+      height: 21px;
+  width: 28px;
+      background-position: 0 -299px;
+      top: 4px;
+      margin-right: 8px;
+}
+
+.Icon-dollar-circle {
+        height: 30px;
+  width: 30px;
+
+        background-position: 0 -330px;
+
+        top: 8px;
+        margin-right: 6px;
+}
+
+.Icon-tick {
+  width: 18px;
+  height: 15px;
+  background-position: 0 -369px;
+  top: 1px;
+}
+
+.Icon-cross-circle {
+          height: 30px;
+  width: 30px;
+
+
+          background-position: 0 -394px;
+
+        top: 8px;
+        margin-right: 6px;
+}
+
+.Icon-circle-right {
+            height: 20px;
+  width: 20px;
+
+
+
+            background-position: 0 -434px;
+
+
+            top: 11px;
+            position: absolute;
+            right: 0;
+}
+
+.Icon-help-circle {
+            height: 30px;
+  width: 30px;
+
+
+          
+            background-position: 0 -464px;
+
+        top: 8px;
+        margin-right: 6px;
 }
