@@ -48,6 +48,14 @@
   box-sizing: border-box;
 }
 
+.Break {
+  margin: 0;
+}
+
+.Break--horizontal {
+  margin-bottom: 40px;
+}
+
 /* General Styles */
 .home {
   background-position: 0 -170px;
@@ -234,4 +242,31 @@
 
 .ProjectUpdates-notifier > a span {
   border-bottom: 1px dashed #B5B5B5;
+}
+
+.Brief-label {
+  color: #333333;
+  font-family: "museo-sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.Brief-title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 40px;
+}
+
+.Brief-2col .span4 {
+    width: 355px;
+}
+
+.Brief-subTitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 40px;
 }
